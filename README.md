@@ -2,7 +2,7 @@
 A collection of small UI/UX and animation projects built with HTML,CSS, and JavaScript: Description Tabs
 # Description Tabs Component
 
-A responsive hamburger menu built with HTML, CSS, and vanilla JavaScript. This component was part of a larger commercial project and is shared here as a standalone module for demonstration purposes.
+A responsive description tabs built with HTML, CSS, and vanilla JavaScript. This component was part of a larger commercial project and is shared here as a standalone module for demonstration purposes.
 
 ---
 
