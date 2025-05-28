@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/e-bg.jpg);
+}
+
+.course-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  padding: 100px;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tabbed {
+  margin: 50px auto;
+  width: 700px;
+  background-color: white;
+  border-radius: 2px;
+}
+.tabbed input {
+  display: none;
+}
+.tabbed input:checked + label {
+  background-color: #64d1f0;
+}
+.tabbed label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 5px;
+  color: rgb(110, 110, 110);
+}
+.tabbed label:hover {
+  background-color: #58d1f3;
+  color: rgb(83, 83, 83);
+}
+.tabs {
+  clear: both;
+  perspective: 600px;
+  /* background-color:white; */
+  width: 700px;
+  margin: 50px auto;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  top: 18.2em;
+}
+.tabs h2 {
+  text-align: left;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.tabs h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(240, 240, 240);
+  margin-top: 10px;
+}
+.tabs p {
+  font-size: 18px;
+  margin: 10px;
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+  color: rgb(110, 110, 110);
+  line-height: 1.5;
+  text-indent: 20px;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.tabs > div {
+  width: 700px;
+  position: absolute;
+  border: 2px solid #efefef;
+  background-color: rgb(233, 230, 230);
+  border-top: 0;
+  transform: rotateX(-20deg);
+  transition: opacity 0.3s, transform 1.5s;
+  opacity: 0;
+  z-index: 0;
+}
+.tabbed:has(#tab-1:checked) + .tabs div:nth-of-type(1),
+.tabbed:has(#tab-2:checked) + .tabs div:nth-of-type(2),
+.tabbed:has(#tab-3:checked) + .tabs div:nth-of-type(3),
+.tabbed:has(#tab-4:checked) + .tabs div:nth-of-type(4) {
+  transform: rotateX(0deg);
+  opacity: 1;
+  z-index: 1;
+}
