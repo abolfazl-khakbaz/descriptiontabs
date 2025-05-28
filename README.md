@@ -6,12 +6,6 @@ A responsive description tabs built with HTML, CSS, and vanilla JavaScript. This
 
 ---
 
-## 🔗 Live Demo
-
-👉 [Click here to view the live demo] (https://descriptiontabs-7ofszxi0f-abolfazl-khakbazs-projects.vercel.app)
-
----
-
 ## ✨ Features
 
 - Mobile-friendly toggle animation
